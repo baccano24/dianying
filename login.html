@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <header>
+            <img src="img/login-logo.png" alt="">
+        </header>
+        <div class="tel">
+            <input type="text" id="txt" placeholder="手机号">
+            <span style="display:none;">获取验证码</span>
+            <div id="chebox"></div>
+        </div>
+        <div class="tel">
+            <input type="text" id="pwd" placeholder="验证码">
+        </div>
+        <button id="btn">登录</button>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        var arr = ["a", "b", "c", "d", "e", "f", "g", 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B"];
+        var chebox = document.getElementById("chebox");
+        chebox.onclick = function () {
+            var str = "";
+            for (var i = 0; i < 4; i++) {
+                var a = Math.floor(arr.length * Math.random());
+                str += arr[a];
+            }
+            chebox.innerHTML = str;
+            console.log(str)
+            var pwd=document.getElementById("pwd")
+            if(pwd.value==str.toString()){alert(1)}
+        }
+
+        $("#btn").click(function () {
+            $(".login-box").animate({ top: "0.1rem", opacity: "0" }, 1000);
+            setTimeout(function () { document.location.href = "index.html" }, 1000);
+        })
+
+
+    </script>
+</body>
+
+</html>

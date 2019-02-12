@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <link rel="stylesheet" href="css/wode.css">
+</head>
+
+<body>
+    <div class="wode-box">
+        <header>
+            <p>
+                <div class="login"></div>
+                <span>立即登录</span>
+            </p>
+        </header>
+        <div class="dd">
+            <a href=""><img src="img/wode-dy.jpg" alt=""><span>电影拼单</span></a>
+            <a href=""><img src="img/wode-pt.jpg" alt=""><span>拼团订单</span></a>
+        </div>
+        <ul>
+            <li>
+                <a href="">
+                    <img class="logo" src="img/wode-mz.jpg" alt="">
+                    <span>卖座卡</span>
+                    <i><img src="img/wode-you.png" alt=""></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="logo" src="img/wode-ye.jpg" alt="">
+                    <span>余额</span>
+                    <b>￥0</b>
+                    <i><img src="img/wode-you.png" alt=""></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="logo" src="img/wode-sz.jpg" alt="">
+                    <span>设置</span>
+                    <i><img src="img/wode-you.png" alt=""></i>
+                </a>
+            </li>
+        </ul>
+        <footer>
+            <a href="javascript:;"><img src="img/footer-dy2.png" alt=""><span>电影</span></a>
+            <a href=""><img src="img/footer-yy.png" alt=""><span>影院</span></a>
+            <a href=""><img src="img/footer-pt.png" alt=""><span>9.9拼团</span></a>
+            <a style="color:#FF5F16" href="javascript:;"><img src="img/footer-wd2.png" alt=""><span>我的</span></a>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $("footer a").click(function () {
+            $(".wode-box").animate({ top: "0.1rem", opacity: "0" }, 1000);
+            setTimeout(function () { document.location.href = "index.html" }, 1000);
+        })
+        $("header .login").click(function () {
+            $(".wode-box").animate({ top: "0.1rem", opacity: "0" }, 1000);
+            setTimeout(function () { document.location.href = "login.html" }, 1000);
+        })
+    </script>
+</body>
+
+</html>

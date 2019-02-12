@@ -1,0 +1,135 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑"; font-size: 12rem;}
+input,a{outline:none;}
+html{font-size: 31.25vw;}
+.wode-box{max-width: 970rem; margin: 0 auto;font-size: 0.08rem;position: relative;}
+body{background: #F4F4F4;}
+
+header{
+    height: 1.2rem;
+    width: 100%;
+    background: url(../img/wode-bg.jpg) no-repeat left;
+    background-size: 100% 1.5rem;
+    box-sizing: border-box;
+    padding: 0.1rem 0 0 0.15rem;
+}
+
+header p{
+    width: 100%;
+    height: 0.35rem;
+    overflow: hidden;
+}
+.login{
+    background: #fff;
+    width: 0.45rem;
+    height: 0.45rem;
+    border: 0.005rem solid #fff;
+    border-radius: 50%;
+    background-image: url(../img/wode-touxiang.png);
+    float: left;
+    margin-right: 0.15rem;
+}
+header span{
+    display: block;
+    float: left;
+    font-size: 0.1rem;
+    color: #fff;
+    line-height: 0.45rem;
+}
+
+.dd{
+    width: 100%;
+    height: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 0.08rem;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 0.1rem;
+}
+.dd a{
+    display: block;
+    width: 50%;
+    height: 0.5rem;
+    text-align: center;
+    color: #797D82;
+    box-sizing: border-box;
+    padding-top: 0.05rem;
+}
+.dd img{
+    margin: 0 auto;
+    margin-top: 0.05rem;
+    margin-bottom: 0.03rem;
+}
+
+ul li{
+    width: 100%;
+    height: 0.35rem;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0.1rem;
+    border-bottom: 0.01rem solid #F4F4F4;
+    position: relative;
+}
+ul li .logo{
+    display: block;
+    float: left;
+    margin-right: 0.1rem;
+}
+ul li span{
+    display: block;
+    float: left;
+    font-size: 0.1rem;
+}
+ul li i img{
+    width: 0.025rem;
+    height: 0.1rem;
+    display: block;
+    float: right;
+}
+ul li b{
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0.2rem;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 0.33rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 0.08rem;
+    background: #fff;
+}
+footer a{
+    display: block;
+    width: 25%;
+    height: 0.33rem;
+    text-align: center;
+    color: #797D82;
+}
+footer img{
+    margin: 0 auto;
+    margin-top: 0.05rem;
+}
+
+
+
+
+
+
+
+
